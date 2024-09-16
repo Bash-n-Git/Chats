@@ -1,0 +1,25 @@
+.member-list {
+  width: 30%;
+  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+  height: 100vh; /* Full height to accommodate the entire screen */
+  overflow-y: auto; /* Scrollable area for member list */
+  box-sizing: border-box;
+}
+
+.member-item {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-item:hover {
+  background-color: #ddd;
+}
+
+.members-header {
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}

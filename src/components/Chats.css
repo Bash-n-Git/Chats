@@ -1,0 +1,123 @@
+/* Chats.css */
+.chats-page {
+    display: flex;
+    height: 100vh; /* Full height to accommodate the entire screen */
+  }
+  
+  .members-list {
+    width: 20%; /* Fixed width for the members list */
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd; /* Added border to separate from chat area */
+  }
+  
+  .members-list .members-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .members-list .member {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .members-list .member:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .members-list .member.active {
+    background-color: #d3ffd3;
+    color: #333;
+  }
+  
+  .chat-area {
+    flex: 1; /* Take the remaining space */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  .chat-header {
+    background-color: #075e54; /* WhatsApp-like header color */
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .messages-container {
+    flex: 1; /* Take the remaining space */
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .message {
+    margin: 10px 0;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .message.sent {
+    background-color: #dcf8c6; /* Greenish for sent messages */
+    align-self: flex-end;
+  }
+  
+  .message.received {
+    background-color: #ffffff; /* Greyish for received messages */
+    align-self: flex-start;
+  }
+  
+  .message-text {
+    word-break: break-word;
+  }
+  
+  .message-timestamp {
+    display: block;
+    font-size: 0.75em;
+    color: #999;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+  }
+  
+  .message-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    align-items: center;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  
+  .send-button {
+    padding: 10px;
+    background-color: #075e54; /* WhatsApp-like send button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+  
